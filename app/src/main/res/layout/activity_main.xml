@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/yulsushi_banner" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="매출"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCurrentMoneySum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="원"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/tvCurrentMoneySum"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/progressBar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/chronometer" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:max="30000"
+            android:progress="0"
+            android:progressDrawable="@drawable/timer_progressbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar">
+
+            <ImageView
+                android:id="@+id/life_gone_1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/sushi_gray" />
+
+            <ImageView
+                android:id="@+id/life_1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/sushi" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/frameLayout"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar">
+
+            <ImageView
+                android:id="@+id/life_gone_2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/sushi_gray" />
+
+            <ImageView
+                android:id="@+id/life_2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/sushi" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/frameLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar">
+
+            <ImageView
+                android:id="@+id/life_gone_3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/sushi_gray" />
+
+            <ImageView
+                android:id="@+id/life_3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/sushi" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/word_bubble1"
+            android:layout_width="130dp"
+            android:layout_height="75dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/word_bubble" />
+
+        <TextView
+            android:id="@+id/tvOrder1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="메뉴"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/word_bubble1" />
+
+        <TextView
+            android:id="@+id/tvjuseyo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="주세요"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/word_bubble1"
+            app:layout_constraintTop_toTopOf="@+id/word_bubble1" />
+
+        <ImageView
+            android:id="@+id/word_bubble2"
+            android:layout_width="130dp"
+            android:layout_height="75dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toStartOf="@+id/word_bubble3"
+            app:layout_constraintStart_toEndOf="@+id/word_bubble1"
+            app:srcCompat="@drawable/word_bubble" />
+
+        <TextView
+            android:id="@+id/tvOrder2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="메뉴"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/word_bubble1"
+            app:layout_constraintTop_toTopOf="@+id/word_bubble2" />
+
+        <TextView
+            android:id="@+id/tvjuseyo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="주세요"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/word_bubble2"
+            app:layout_constraintTop_toTopOf="@+id/word_bubble2" />
+
+        <ImageView
+            android:id="@+id/word_bubble3"
+            android:layout_width="130dp"
+            android:layout_height="75dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/word_bubble" />
+
+        <TextView
+            android:id="@+id/tvOrder3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="메뉴"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/word_bubble3"
+            app:layout_constraintTop_toTopOf="@+id/word_bubble3" />
+
+        <TextView
+            android:id="@+id/tvjuseyo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="주세요"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/word_bubble3" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/constraint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <FrameLayout
+                android:id="@+id/first_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/angry_girl"
+                    android:layout_width="145dp"
+                    android:layout_height="155dp"
+                    app:srcCompat="@drawable/angry_girl" />
+
+                <ImageView
+                    android:id="@+id/girl"
+                    android:layout_width="145dp"
+                    android:layout_height="155dp"
+                    app:srcCompat="@drawable/girl" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/second_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/angry_man"
+                    android:layout_width="150dp"
+                    android:layout_height="155dp"
+                    app:srcCompat="@drawable/angry_man" />
+
+                <ImageView
+                    android:id="@+id/man"
+                    android:layout_width="150dp"
+                    android:layout_height="155dp"
+                    app:srcCompat="@drawable/man" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/third_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/angry_woman"
+                    android:layout_width="140dp"
+                    android:layout_height="155dp"
+                    app:srcCompat="@drawable/angry_woman" />
+
+                <ImageView
+                    android:id="@+id/woman"
+                    android:layout_width="140dp"
+                    android:layout_height="155dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/woman" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/tvSelectedMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/salmonsushi"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSelectedMenu"
+                app:srcCompat="@drawable/salmon_sushi" />
+
+            <ImageView
+                android:id="@+id/tunasushi"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ajisushi"
+                app:layout_constraintStart_toEndOf="@+id/salmonsushi"
+                app:layout_constraintTop_toBottomOf="@+id/tvSelectedMenu"
+                app:srcCompat="@drawable/tuna_sushi" />
+
+            <ImageView
+                android:id="@+id/ajisushi"
+                android:layout_width="120dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="32dp"
+                android:layout_weight="0.5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSelectedMenu"
+                app:srcCompat="@drawable/aji_sushi" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
