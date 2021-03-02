@@ -1,0 +1,7 @@
+#Mon Jan 25 23:38:03 KST 2021
+base.0=C\:\\work\\rp2\\Sushi_Tycoon\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=C\:\\work\\rp2\\Sushi_Tycoon\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
