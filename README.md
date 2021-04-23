@@ -1,5 +1,11 @@
 # 율스시
 
+<img src="https://user-images.githubusercontent.com/37764504/115895722-b1807400-a495-11eb-8677-949e49f3fa0a.png" width="300" height="450"/>
+<img src="https://user-images.githubusercontent.com/37764504/115895288-374fef80-a495-11eb-9e18-0972ccc71131.png" width="300" height="450"/>
+
+
+## 시연영상
+
 [![시연영상](https://i9.ytimg.com/vi/XG2KCNcYmR0/mq2.jpg?sqp=CKC1ioQG&rs=AOn4CLD9JVkzfQ3GA6aOcygfN7CIaBGVtA&retry=5)](https://youtu.be/XG2KCNcYmR0)
 
 ## Introduction
