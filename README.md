@@ -1,6 +1,6 @@
 # 율스시
 
-[![시연영상](https://i9.ytimg.com/vi/XG2KCNcYmR0/mq2.jpg?sqp=CKC1ioQG&rs=AOn4CLD9JVkzfQ3GA6aOcygfN7CIaBGVtA&retry=5)](https://youtu.be/_npKlqdrBRQ)
+[![시연영상](https://i9.ytimg.com/vi/XG2KCNcYmR0/mq2.jpg?sqp=CKC1ioQG&rs=AOn4CLD9JVkzfQ3GA6aOcygfN7CIaBGVtA&retry=5)](https://youtu.be/XG2KCNcYmR0)
 
 ## Introduction
 멀티스레드를 활용하여 간단한 스시타이쿤 게임
