@@ -6,7 +6,8 @@
 
 ## 시연영상
 
-[![시연영상](https://i9.ytimg.com/vi/XG2KCNcYmR0/mq2.jpg?sqp=CKC1ioQG&rs=AOn4CLD9JVkzfQ3GA6aOcygfN7CIaBGVtA&retry=5)](https://youtu.be/XG2KCNcYmR0)
+[![시연영상](https://user-images.githubusercontent.com/37764504/115899781-22c22600-a49a-11eb-8371-747daa99994f.png)](https://vimeo.com/540727585)
+
 
 ## Introduction
 멀티스레드를 활용하여 간단한 스시타이쿤 게임
